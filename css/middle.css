@@ -1,8 +1,59 @@
 #middle {
     position: relative;
     width: 70%;
-    height: 100vh;
+    height: 100%;
     padding: 0px 0.5rem;
     margin: auto;
     background: linear-gradient(180deg, #424242 0%, #111111 100%);
+}
+
+.img-carusel{
+    width: 100%;
+    margin-left: 0;
+}
+
+.profile-header {
+    display: flex;
+    margin-left: 90%;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-top: -2em;
+}
+
+.avatar{
+    width: 35px;
+    height: 35px;
+}
+
+.profile-name{
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.arrow-profile{
+    width: 10px;
+    height: 7px;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+.see-more-btn{
+    color: white;
+    border-radius: 27px;
+    width: 12em;
+    height: 2em;
+    border: 2px solid white;
+    background-color: black;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.search{
+    border: 2px solid white;
+    color: white;
+    border-radius: 27px;
+    width: 12em;
+    height: 2em;
+    background: black;
+    margin-top: 1em;
 }
