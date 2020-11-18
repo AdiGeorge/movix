@@ -18,6 +18,17 @@
     height: 4em;
     background: linear-gradient(90deg, rgba(244,118,80,1) 0%, rgba(242,164,71,1) 100%);
 
+.category ul {
+    display: none;
+    margin-left: 2.2em;
+}
+
+.categories h3 {
+    position: relative;
+    background: linear-gradient(90deg, rgba(155, 155, 155, 0.12) 0%, rgba(196, 196, 196, 0) 75.23%);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
 }
 
 .categories h3::after {
