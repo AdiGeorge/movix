@@ -1,0 +1,35 @@
+
+body {
+    background: var(--main-bg-color);
+    position: flex;
+}
+
+#left-img {
+position: absolute;
+width: 800px;
+height: 900px;
+left: 0px;
+top: -33px;
+}
+
+#logo{
+    width: 60%;
+}
+
+#right-login-form{
+    position: absolute;
+    margin: 100px 0 0 1010px;
+}
+
+input.info{
+width: 260px;
+height: 44px;
+border-radius: 22px;
+background: rgba(79, 79, 79, 0.55);
+border: 2px solid  #F2A447;
+margin-top: 8px;
+}
+
+h1 {
+  margin: 20px 0px 15px 80px;  
+}
