@@ -18,38 +18,64 @@
     </nav>
     </header>
    <main class="container">
-        <video src=""></video>
+        <video src="images/trailer.mp4" autoplay muted></video>
+        
+        <div>
+            <h3>Drama Movies</h3><br>
+            <p>Popular now</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
+                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
+                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
+                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
         <div>
             <h3>Drama Movies</h3><br>
             <p>Popular now</p>
             <div class="img-carusel">
-            <img src="images/movie1.png" alt="movie1">
-            <img src="images/movie2.png" alt="movie2">
-            <img src="images/movie3.png" alt="movie3">
-        </div>
+                <img src="images/movie4.png" alt="movie4">
+                <img src="images/movie5.png" alt="movie5">
+                <img src="images/movie1.png" alt="movie1">
+                <img src="images/movie1.png" alt="movie1">
+            </div>
         </div>
 
         <div>
-            <p>Viewed by friends</p>
-            <div class="img-carusel"
-            <img src="images/movie4.png" alt="movie4">
-            <img src="images/movie5.png" alt="movie5">
-            <img src="images/movie1.png" alt="movie1">
-            <img src="images/movie1.png" alt="movie1">
-        </div>
-        </div>
-
-        <div> 
-            <p>Recently released</p>
+            <h3>Drama Movies</h3><br>
+            <p>Popular now</p>
             <div class="img-carusel">
-            <img src="images/movie5.png" alt="movie5">
-            <img src="images/movie2.png" alt="movie2">
-            <img src="images/movie3.png" alt="movie3">
-        </div>
+                <img src="images/movie5.png" alt="movie5">
+                <img src="images/movie2.png" alt="movie2">
+                <img src="images/movie3.png" alt="movie3">
+            </div>
         </div>
 
         <button class="see-more-btn">See more</button>
    </main>
 </div>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="../../swiper.min.js"></script>
+<script src="../../app.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 0,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+});
+</script>
 </body>
 </html>

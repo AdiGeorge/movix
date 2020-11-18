@@ -1,3 +1,14 @@
+'use strict'
+
+// import Swiper from 'swiper';
+// // import Swiper styles
+// import 'swiper/swiper-bundle.css';
+
+// const swiper = new Swiper(...);
+
+
+
+
 var acc = document.getElementsByClassName("categ-title-arrow");
 
 for (i = 0; i < acc.length; i++) {
