@@ -18,6 +18,11 @@
     margin-top: 1.5em; 
 }
 
+.category ul {
+    display: none;
+    margin-left: 2.2em;
+}
+
 .categories h3 {
     position: relative;
     background: linear-gradient(90deg, rgba(155, 155, 155, 0.12) 0%, rgba(196, 196, 196, 0) 75.23%);
