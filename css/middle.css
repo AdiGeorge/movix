@@ -24,6 +24,7 @@
 .avatar{
     width: 35px;
     height: 35px;
+    margin-bottom: 5%;
 }
 
 .profile-name{
@@ -32,10 +33,11 @@
 }
 
 .arrow-profile{
-    width: 10px;
+    width: 12px;
     height: 7px;
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 0.8em;
+    margin-right: 0.2em;
 }
 
 .see-more-btn{

@@ -1,7 +1,7 @@
 #left {
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     background: var(--main-bg-color);
     width: 15%;
     height: 100%;
@@ -15,7 +15,7 @@
 }
 
 .category {
-    margin-top: 1.5em; 
+    margin-top: 1.5em;
 }
 
 .category ul {
@@ -37,7 +37,7 @@
     position: absolute;
     width: 3px;
     height: 100%;
-    left:-15px;
+    left: -15px;
     top: 0;
     right: 0;
 }
@@ -61,14 +61,16 @@
     margin-top: 1em;
 }
 
-.random-btn{
+.random-btn {
     border: 2px solid white;
     border-radius: 27px;
     width: 12em;
     height: 4em;
-    background: linear-gradient(90deg, rgba(244,118,80,1) 0%, rgba(242,164,71,1) 100%);
+    background: linear-gradient(90deg, rgba(244, 118, 80, 1) 0%, rgba(242, 164, 71, 1) 100%);
     margin-top: 2em;
-}:root {
+}
+
+:root {
     --main-bg-color: #1B1B1B;
     --main-font: 'Gotham';
     --secondary-font: 'Roboto';
@@ -79,16 +81,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color:white;
+    color: white;
     font-family: var(--main-font);
 }
+
 ul {
     list-style: none;
 }
 
 li {
     line-height: 1.5;
-}#middle {
+}
+
+#middle {
     position: relative;
     width: 70%;
     height: 100%;
@@ -97,7 +102,7 @@ li {
     background: linear-gradient(180deg, #424242 0%, #111111 100%);
 }
 
-.img-carusel{
+.img-carusel {
     width: 100%;
     margin-left: 0;
 }
@@ -110,24 +115,26 @@ li {
     margin-top: -2em;
 }
 
-.avatar{
+.avatar {
     width: 35px;
     height: 35px;
+    margin-bottom: 5%;
 }
 
-.profile-name{
+.profile-name {
     align-items: center;
     margin-top: 0.5em;
 }
 
-.arrow-profile{
-    width: 10px;
+.arrow-profile {
+    width: 12px;
     height: 7px;
     align-items: center;
-    margin-top: 0.5em;
+    margin-top: 0.8em;
+    margin-right: 0.2em;
 }
 
-.see-more-btn{
+.see-more-btn {
     color: white;
     border-radius: 27px;
     width: 12em;
@@ -138,7 +145,7 @@ li {
     margin-left: 40%;
 }
 
-.search{
+.search {
     border: 2px solid white;
     color: white;
     border-radius: 27px;
@@ -154,14 +161,61 @@ video {
     width: 100%;
     height: 400px;
     object-fit: cover;
-}#right {
+}
+
+#right {
     position: fixed;
-    top: 0px;
-    right: 0px;  
+    top: 0;
+    right: 0;
     width: 15%;
-    height: 100%;  
+    height: 100%;
     background: var(--main-bg-color);
-}.swiper-container {
+}
+
+.friends-title {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.friends {
+    cursor: pointer;
+}
+
+.one-friend {
+    align-items: center;
+    display: flex;
+}
+
+
+.friend {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
+}
+
+.friend-name {
+    margin-left: 0.2em;
+}
+
+.watching {
+    margin-left: 3.5em;
+    color: gray;
+    font-size: 15px;
+    margin-top: -0.4em;
+}
+
+.friends-btn {
+    border: 2px solid white;
+    border-radius: 27px;
+    width: 12em;
+    height: 3em;
+    background: linear-gradient(90deg, rgba(244, 118, 80, 1) 0%, rgba(242, 164, 71, 1) 100%);
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.swiper-container {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -284,31 +338,31 @@ video {
 }
 
 .swiper-container-3d .swiper-slide-shadow-left {
-    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))
 }
 
 .swiper-container-3d .swiper-slide-shadow-right {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))
 }
 
 .swiper-container-3d .swiper-slide-shadow-top {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))
 }
 
 .swiper-container-3d .swiper-slide-shadow-bottom {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0))
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))
 }
 
 .swiper-container-wp8-horizontal,
@@ -385,9 +439,9 @@ video {
 .swiper-pagination {
     position: absolute;
     text-align: center;
-    -webkit-transition: .3s opacity;
-    -o-transition: .3s opacity;
-    transition: .3s opacity;
+    -webkit-transition: 0.3s opacity;
+    -o-transition: 0.3s opacity;
+    transition: 0.3s opacity;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 10
@@ -411,9 +465,9 @@ video {
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-    -webkit-transform: scale(.33);
-    -ms-transform: scale(.33);
-    transform: scale(.33);
+    -webkit-transform: scale(0.33);
+    -ms-transform: scale(0.33);
+    transform: scale(0.33);
     position: relative
 }
 
@@ -430,27 +484,27 @@ video {
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev {
-    -webkit-transform: scale(.66);
-    -ms-transform: scale(.66);
-    transform: scale(.66)
+    -webkit-transform: scale(0.66);
+    -ms-transform: scale(0.66);
+    transform: scale(0.66)
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev-prev {
-    -webkit-transform: scale(.33);
-    -ms-transform: scale(.33);
-    transform: scale(.33)
+    -webkit-transform: scale(0.33);
+    -ms-transform: scale(0.33);
+    transform: scale(0.33)
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
-    -webkit-transform: scale(.66);
-    -ms-transform: scale(.66);
-    transform: scale(.66)
+    -webkit-transform: scale(0.66);
+    -ms-transform: scale(0.66);
+    transform: scale(0.66)
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
-    -webkit-transform: scale(.33);
-    -ms-transform: scale(.33);
-    transform: scale(.33)
+    -webkit-transform: scale(0.33);
+    -ms-transform: scale(0.33);
+    transform: scale(0.33)
 }
 
 .swiper-pagination-bullet {
@@ -479,7 +533,7 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-bullet-active {
     opacity: 1;
-    background: #007aff
+    background: linear-gradient(90deg, rgba(244, 118, 80, 1) 0%, rgba(242, 164, 71, 1) 100%);
 }
 
 .swiper-container-vertical>.swiper-pagination-bullets {
@@ -504,11 +558,11 @@ button.swiper-pagination-bullet {
 
 .swiper-container-vertical>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     display: inline-block;
-    -webkit-transition: .2s top, .2s -webkit-transform;
-    transition: .2s top, .2s -webkit-transform;
-    -o-transition: .2s transform, .2s top;
-    transition: .2s transform, .2s top;
-    transition: .2s transform, .2s top, .2s -webkit-transform
+    -webkit-transition: 0.2s top, 0.2s -webkit-transform;
+    transition: 0.2s top, 0.2s -webkit-transform;
+    -o-transition: 0.2s transform, 0.2s top;
+    transition: 0.2s transform, 0.2s top;
+    transition: 0.2s transform, 0.2s top, 0.2s -webkit-transform
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -524,23 +578,23 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-    -webkit-transition: .2s left, .2s -webkit-transform;
-    transition: .2s left, .2s -webkit-transform;
-    -o-transition: .2s transform, .2s left;
-    transition: .2s transform, .2s left;
-    transition: .2s transform, .2s left, .2s -webkit-transform
+    -webkit-transition: 0.2s left, 0.2s -webkit-transform;
+    transition: 0.2s left, 0.2s -webkit-transform;
+    -o-transition: 0.2s transform, 0.2s left;
+    transition: 0.2s transform, 0.2s left;
+    transition: 0.2s transform, 0.2s left, 0.2s -webkit-transform
 }
 
 .swiper-container-horizontal.swiper-container-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-    -webkit-transition: .2s right, .2s -webkit-transform;
-    transition: .2s right, .2s -webkit-transform;
-    -o-transition: .2s transform, .2s right;
-    transition: .2s transform, .2s right;
-    transition: .2s transform, .2s right, .2s -webkit-transform
+    -webkit-transition: 0.2s right, 0.2s -webkit-transform;
+    transition: 0.2s right, 0.2s -webkit-transform;
+    -o-transition: 0.2s transform, 0.2s right;
+    transition: 0.2s transform, 0.2s right;
+    transition: 0.2s transform, 0.2s right, 0.2s -webkit-transform
 }
 
 .swiper-pagination-progressbar {
-    background: rgba(0, 0, 0, .25);
+    background: rgba(0, 0, 0, 0.25);
     position: absolute
 }
 
@@ -586,7 +640,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-progressbar.swiper-pagination-white {
-    background: rgba(255, 255, 255, .25)
+    background: rgba(255, 255, 255, 0.25)
 }
 
 .swiper-pagination-progressbar.swiper-pagination-white .swiper-pagination-progressbar-fill {
@@ -598,7 +652,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination-progressbar.swiper-pagination-black {
-    background: rgba(0, 0, 0, .25)
+    background: rgba(0, 0, 0, 0.25)
 }
 
 .swiper-pagination-progressbar.swiper-pagination-black .swiper-pagination-progressbar-fill {
@@ -613,7 +667,7 @@ button.swiper-pagination-bullet {
     border-radius: 10px;
     position: relative;
     -ms-touch-action: none;
-    background: rgba(0, 0, 0, .1)
+    background: rgba(0, 0, 0, 0.1)
 }
 
 .swiper-container-horizontal>.swiper-scrollbar {
@@ -638,7 +692,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     width: 100%;
     position: relative;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     left: 0;
     top: 0

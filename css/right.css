@@ -1,8 +1,50 @@
 #right {
     position: fixed;
-    top: 0px;
-    right: 0px;  
+    top: 0;
+    right: 0;
     width: 15%;
-    height: 100%;  
+    height: 100%;
     background: var(--main-bg-color);
+}
+
+.friends-title {
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+.friends {
+    cursor: pointer;
+}
+
+.one-friend {
+    align-items: center;
+    display: flex;
+}
+
+.friend {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
+}
+
+.friend-name {
+    margin-left: 0.2em;
+}
+
+.watching {
+    margin-left: 3.5em;
+    color: gray;
+    font-size: 15px;
+    margin-top: -0.4em;
+}
+
+.friends-btn {
+    border: 2px solid white;
+    border-radius: 27px;
+    width: 12em;
+    height: 3em;
+    background: linear-gradient(90deg, rgba(244, 118, 80, 1) 0%, rgba(242, 164, 71, 1) 100%);
+    margin-top: 2em;
+    margin-left: 2em;
 }
