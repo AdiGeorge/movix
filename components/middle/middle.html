@@ -1,100 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="middle">
-   <header>
-       <nav>
-        <input class="search" type="text" placeholder="Search">
-        <div class="profile-header">
-            <img class="avatar" src="images/avatar.png" alt="profile img">
-            <p class="profile-name">Name</p>
-            <img class="arrow-profile" src="images/arrow.png" alt="arrow">
-        </div>
-    </nav>
-    </header>
-   <main class="container">
-        <video src="images/trailer.mp4" autoplay muted></video>
-        
-        <div>
-            <h3>Drama Movies</h3><br>
-            <p>Popular now</p>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+        <header>
+            <nav>
+                <input class="search" type="text" placeholder="Search">
+                <div class="profile-header">
+                    <img class="avatar" src="images/avatar.png" alt="profile img">
+                    <p class="profile-name">Name</p>
+                    <img class="arrow-profile" src="images/arrow.png" alt="arrow">
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
+            </nav>
+        </header>
+        <main class="container">
+            <video src="images/trailer.mp4" autoplay muted></video>
+
+            <div>
+                <h3>Drama Movies</h3><br>
+                <p>Popular now</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <img data-toggle="modal" data-target="#modal4" class="swiper-slide" src="images/movie1.png"
+                            alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Viewed by friends</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Recently released</p>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <button class="see-more-btn">See more</button>
+        </main>
+
+
+        <!-- Modal -->
+        <div class="modal fade movie-modal" id="modal4" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content movie-modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <video class="modal-video" src="images/trailer.mp4" autoplay muted></video>
+                        <h4 class="modal-title">The Dragon</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="icons">
+                            <i> 👍</i>
+                            <i> 👎</i>
+                            <i> 🤝</i>
+                        </div>
+                        <div class="movie-content">
+                        <p>To replace his grandfather at the helm of a cartel, a financier from Tokyo returns home to Mexico and has to fight two rivals to gain power.</p>
+                        <div class="movie-info">
+                        <p class="border-info">2020</p>
+                        <p class="border-info">16+</p>
+                        <p class="border-info">1h 35min</p>
+                    </div>
+                    <div>
+                        <p class="border-info">Distribution</p>
+                        <p class="border-info">Genres</p>
+                        <p class="border-info">Type</p>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <div>
-            <h3>Drama Movies</h3><br>
-            <p>Popular now</p>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-
-        <div>
-            <h3>Drama Movies</h3><br>
-            <p>Popular now</p>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                    <img class="swiper-slide" src="images/movie1.png" alt="movie1" >
-                    <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                    <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-
-        <button class="see-more-btn">See more</button>
-   </main>
-</div>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="../../swiper.min.js"></script>
-<script src="../../app.js"></script>
-<script>
-    var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 0,
-    pagination: {
-    el: '.swiper-pagination',
-    clickable: true
-  },
-});
-</script>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/movix/swiper.min.js"></script>
+    <script src="/movix/app.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+        });
+    </script>
 </body>
+
 </html>
