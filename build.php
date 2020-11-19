@@ -15,7 +15,7 @@ foreach(glob('./css/*') as $filename){
 
 // echo $sData;
 // file_put_contents(__DIR__.'/css/app.css', '');
-file_put_contents(__DIR__.'../css/app.css', $sCss);
+file_put_contents(__DIR__.'/css/app.css', $sCss);
 
 // exit();
 
