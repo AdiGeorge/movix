@@ -64,58 +64,97 @@ video {
     object-fit: cover;
 }
 
-
 /* The Modal (background) */
-.movie-modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    padding-top: 7em;
-    /* Location of the box */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-}
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
 
-/* Modal Content */
-.movie-modal-content {
-    background-color: rgba(0, 0, 0, 0.75) !important;
+  .movie-content{
+      margin-top: 16%; 
+  }
+  
+  /* Modal Content */
+  .modal-content {
+   background-image: url("/movix/images/poster.png");
+   background-size: cover;
+    color:white;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888 !important;
-    width: 100% !important;
-    height: 100% !important;
-}
-.modal-video{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    object-fit: cover;
-}
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 70%;
+    height: 80%;
+  }
+  /* The Close Button */
+  .close {
+    color:black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white !important;
+    padding: 0.01em 0.2em 0.01em 0.2em;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+  }
 
 .icons{
     display: flex;
+}
+
+.icon-margin{
+    margin-left: 10px;
+}
+
+.modal-content .play-icon{
+font-size: 5em !important;
+margin-left: 45%;
+margin-right: 45%;
+margin-top: 5%;
+cursor: pointer;
+}
+
+.modal-title{
+    font-size: 35px;
+    margin-left: 39%;
+    margin-top: 1em;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    width: 25%;
+    height: 15%;
 }
 
  .movie-info{
    display: flex;
 } 
 
+.modal-text{
+    font-size: 15px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-right: 2%;
+}
+
 .border-info{
     border: 1px solid #888 !important;
-    width: 5em;
+    width: 6em;
     height: 2em;
+}
+
+.myBtn{
+    cursor: pointer;
 }
