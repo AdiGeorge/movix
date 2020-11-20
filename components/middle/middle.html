@@ -27,8 +27,7 @@
                 <p>Popular now</p>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <img data-toggle="modal" data-target="#modal4" class="swiper-slide" src="images/movie1.png"
-                            alt="movie1">
+                        <img class="myBtn" class="swiper-slide" src="images/movie1.png" alt="movie1">
                         <img class="swiper-slide" src="images/movie2.png" alt="movie2">
                         <img class="swiper-slide" src="images/movie3.png" alt="movie3">
                         <img class="swiper-slide" src="images/movie1.png" alt="movie1">
@@ -84,42 +83,43 @@
             <button class="see-more-btn">See more</button>
         </main>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-        <!-- Modal -->
-        <div class="modal fade movie-modal" id="modal4" tabindex="-1" role="dialog">
-            <div class="modal-dialog">
+            <!-- Modal content -->
+            <div class="modal-content">
 
-                <!-- Modal content-->
-                <div class="modal-content movie-modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <video class="modal-video" src="images/trailer.mp4" autoplay muted></video>
-                        <h4 class="modal-title">The Dragon</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <span class="modal-title">The Dragon</span>
+                <i class="fa fa-play-circle play-icon"></i>
+
+                <div class="movie-content">
+                    <div class="icons">
+
+                        <div> <i class="fa fa-thumbs-up"></i></div>
+                        <div class="icon-margin"> <i class="fa fa-thumbs-down"></i></div>
+                        <div class="icon-margin"> <i class="fa fa-slideshare"></i></div>
                     </div>
-                    <div class="modal-body">
-                        <div class="icons">
-                            <i> 👍</i>
-                            <i> 👎</i>
-                            <i> 🤝</i>
-                        </div>
-                        <div class="movie-content">
-                        <p>To replace his grandfather at the helm of a cartel, a financier from Tokyo returns home to Mexico and has to fight two rivals to gain power.</p>
-                        <div class="movie-info">
-                        <p class="border-info">2020</p>
-                        <p class="border-info">16+</p>
-                        <p class="border-info">1h 35min</p>
-                    </div>
-                    <div>
+                    <div class="movie-info">
+                    <p class="modal-text">To replace his grandfather at the helm of a cartel, a financier from Tokyo returns home to Mexico
+                        and has to fight two rivals to gain power.</p>
                         <p class="border-info">Distribution</p>
-                        <p class="border-info">Genres</p>
-                        <p class="border-info">Type</p>
+                        <p class="border-info icon-margin">Genres</p>
+                        <p class="border-info icon-margin">Type</p>
                     </div>
-                    </div>
+                 
+                    <div class="movie-info">
+                        <p class="border-info">2020</p>
+                        <p class="border-info icon-margin">16+</p>
+                        <p class="border-info icon-margin">1h 35min</p>
                     </div>
                 </div>
-
             </div>
+
         </div>
+
+
+    </div>
 
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
