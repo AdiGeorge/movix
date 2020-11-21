@@ -15,9 +15,7 @@ foreach(glob('./css/*') as $filename){
 
 // echo $sData;
 // file_put_contents(__DIR__.'/css/app.css', '');
-file_put_contents(__DIR__.'/css/app.css', $sCss);
-
-// exit();
+file_put_contents(__DIR__.'../css/app.css', $sCss);
 
 exit();
 
@@ -30,4 +28,4 @@ foreach(glob('./js/*') as $filename){
 }
 
 // echo $sJs;
-file_put_contents(__DIR__.'/js/app.js', $sJs);
+file_put_contents(__DIR__.'app.js', $sJs);

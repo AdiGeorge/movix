@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 
 // import Swiper from 'swiper';
 // // import Swiper styles
@@ -6,19 +6,23 @@
 
 // const swiper = new Swiper(...);
 
+function showPage(pageId){
+  document.querySelectorAll('.subpage').forEach( item => {
+      item.style.display = "none"
+  })
+  document.getElementById(pageId).style.display="block"
+}
 
 var acc = document.getElementsByClassName("categ-title-arrow");
 
 for (var i=0; i<acc.length; i++) {
   acc[i].addEventListener("click", function() {
     var panel = this.nextElementSibling;
-    if (panel.style.display == "none") {
-      panel.style.display = "block";
-    } else
-    {
+    if (panel.style.display === "block") {
       panel.style.display = "none";
-
-    }
+    } else {
+      panel.style.display = "block";
+    } 
   });
 }
 

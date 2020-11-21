@@ -11,14 +11,14 @@
     margin: auto;
     display: block;
     padding: 1em;
-    width: 50%;
+    width: 60%;
 }
 
 .category {
     margin-top: 1.5em; 
 }
 
-.category ul {
+.titles {
     display: none;
     margin-left: 2.2em;
 }
