@@ -5,6 +5,7 @@
     width: 15%;
     height: 100%;
     background: var(--main-bg-color);
+    margin: auto;
 }
 
 .friends-title {
