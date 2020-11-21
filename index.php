@@ -10,6 +10,7 @@
 </head>
 <body>
   
+
   <?php require_once(__DIR__.'/components/left/left-main.html') ?>
   <?php require_once(__DIR__.'/components/middle/middle.php') ?>
   <?php require_once(__DIR__.'/components/right/right.html') ?> 
