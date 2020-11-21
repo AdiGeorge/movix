@@ -7,17 +7,17 @@
 // const swiper = new Swiper(...);
 
 
-
-
 var acc = document.getElementsByClassName("categ-title-arrow");
-var i;
-for (i = 0; i < acc.length; i++) {
+
+for (var i=0; i<acc.length; i++) {
   acc[i].addEventListener("click", function() {
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
+    if (panel.style.display == "none") {
       panel.style.display = "block";
+    } else
+    {
+      panel.style.display = "none";
+
     }
   });
 }
