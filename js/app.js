@@ -5,7 +5,10 @@
 // import 'swiper/swiper-bundle.css';
 
 // const swiper = new Swiper(...);
+<<<<<<< Updated upstream:app.js
 
+=======
+>>>>>>> Stashed changes:js/app.js
 function showPage(pageId){
   document.querySelectorAll('.subpage').forEach( item => {
       item.style.display = "none"
