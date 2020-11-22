@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
     <div id="middle">
         <header>
             <nav>
@@ -95,7 +86,9 @@
 
                 <button class="see-more-btn">See more</button>
                 <!-- The Modal -->
-                <?php require_once(__DIR__.'./modal.html') ?>
+                <?php // Windows -> require_once(__DIR__.'./modal.html') 
+                require_once('modal.html')
+                ?>
 
             </div>
 
@@ -117,6 +110,3 @@
     </div>
 
     </div>
-</body>
-
-</html>
