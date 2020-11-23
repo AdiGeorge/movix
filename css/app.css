@@ -343,24 +343,28 @@ padding-bottom:.5em;
 
 .profile-info p {
     font-size: 1.2em;
-}body {
-    background: var(--main-bg-color);
+}#register-bg {
+   background-image: url("/movix/images/firstpagebg.png");
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-#left-img {
-position: absolute;
-width: 10px !important;
+#login-form{
+    background-color: black;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
 
+.content{
+   margin-left: 25%;
 }
 
 #logo{
-    width: 60%;
+    width: 40%;
+    margin-left: 10%;
 }
 
-#right-login-form{
-    position: absolute;
-    margin: 100px 0 0 1010px;
-}
 
 input.info{
 width: 260px;
@@ -404,6 +408,7 @@ button.signup{
     border-radius: 24px;
     background: black;
     font-size: 1em;
+    cursor: pointer;
     }
 
 .or{ 

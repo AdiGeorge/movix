@@ -26,28 +26,32 @@ for (var i=0; i<acc.length; i++) {
 }
 
 
+
+/////////REGISTER MODAL /////////
+
 // Get the modal
-var modal = document.getElementById("myModal");
+var modalRegister = document.getElementById("myModalRegister");
 
 // Get the button that opens the modal
-var btn = document.querySelector(".myBtn");
+var btnRegister = document.querySelector(".myBtnRegister");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("closeRegister")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+btnRegister.onclick = function() {
+    modalRegister.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+    modalRegister.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+window.onclick = function(eventRegister) {
+  if (eventRegister.target == modalRegister) {
+    modalRegister.style.display = "none";
   }
 }
+
