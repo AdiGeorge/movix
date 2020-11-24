@@ -1,61 +1,60 @@
-
 #register-bg {
-   background-image: url("/movix/images/firstpagebg.png");
-   background-repeat: no-repeat;
-   background-size: cover;
+    background-image: url("/movix/images/firstpagebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#login-form{
+#login-form {
     background-color: black;
     width: 50%;
     height: 50%;
     margin-left: 25%;
 }
 
-.content{
-   margin-left: 25%;
+.content {
+    margin-left: 25%;
 }
 
-#logo{
+#logo {
     width: 40%;
     margin-left: 10%;
 }
 
 
-input.info{
-width: 260px;
-height: 44px;
-border-radius: 22px;
-background: rgba(79, 79, 79, 0.55);
-border: 2px solid  #F2A447;
-margin-top: 8px;
+input.info {
+    width: 260px;
+    height: 44px;
+    border-radius: 22px;
+    background: rgba(79, 79, 79, 0.55);
+    border: 2px solid #F2A447;
+    margin-top: 8px;
 }
 
 h1 {
-  margin: 20px 0px 15px 80px;  
-}
- 
-::placeholder{
-color: white;
-padding-left:10px;
+    margin: 20px 0px 15px 80px;
 }
 
-.rmb-me{
+::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+.rmb-me {
     margin: 10px 0 0 7px;
 }
 
-button.login{
-margin-left: 16%;
-width: 30%;
-height: 40px;
-border: 2px solid #FFFFFF;
-box-sizing: border-box;
-border-radius: 22px;
-background: linear-gradient(270deg, #F2A447 0%, #E47650 100%);
-font-size: 1em;
+button.login {
+    margin-left: 16%;
+    width: 30%;
+    height: 40px;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 22px;
+    background: linear-gradient(270deg, #F2A447 0%, #E47650 100%);
+    font-size: 1em;
 }
 
-button.signup{
+button.signup {
     margin: 2% 0 3% 10%;
     width: 43%;
     height: 40px;
@@ -65,18 +64,18 @@ button.signup{
     background: black;
     font-size: 1em;
     cursor: pointer;
-    }
-
-.or{ 
-font-style: normal;
-font-size: 1em;
-line-height: 19px;
-text-align: center;
-color: #FFFFFF;
-margin: 5% 0 0 28%;
 }
 
-button.facebook{
+.or {
+    font-style: normal;
+    font-size: 1em;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 5% 0 0 28%;
+}
+
+button.facebook {
     margin: 2% 0 3% 3%;
     width: 57%;
     height: 40px;
@@ -85,9 +84,94 @@ button.facebook{
     border-radius: 24px;
     background: #4267B2;
     font-size: 1.2em;
-    }
+}
 
-.forgot-password{
+.forgot-password {
     margin: 15.5%;
     text-decoration: none;
+}
+
+
+/* The Modal (background) */
+.modal-register {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* .register-form {
+     margin-top: -10%; 
+    margin-left: 20%;
+} */
+
+/* Modal Content */
+.modal-content-register {
+    background-image: url("/movix/images/registerModal.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 50%;
+    height: 95%;
+}
+
+/* The Close Button */
+.closeRegister {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white !important;
+    padding: 0.01em 0.2em 0.01em 0.2em;
+}
+
+.closeRegister:hover,
+.closeRegister:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input.modal-info {
+    width: 260px;
+    height: 44px;
+    border-radius: 22px;
+    background: rgba(79, 79, 79, 0.55);
+    border: 2px solid #F2A447;
+    margin-top: 8px;
+    margin-left: 10%;
+}
+
+.signup-title {
+    font-size: 2em;
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+.modal-rmb-me {
+    margin: 10px 0 0 10%;
+}
+
+.content-register {
+    margin-top: 5%;
+    margin-left: 20%;
 }

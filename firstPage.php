@@ -17,7 +17,7 @@
   <!-- <script src="/js/swiper.min.js"></script> -->
 
    <!-- Mac path -> <script src="/js/app.js"></script> -->
-    <script src="/movix/js/app.js"></script>
+     <script src="/movix/js/register.js"></script>
 
 </body>
 </html>
