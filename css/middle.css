@@ -6,26 +6,72 @@
     padding: 0;
     /* padding-top: 2em; */
     margin: auto;
-    background: linear-gradient(180deg, #424242 0%, #111111 100%);
+    background: linear-gradient(180deg, #424242 0%, #111111 50%);
 }
 
 header nav {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 10fr 10fr 1fr;
+    align-items: center;
    height: 6em;
-   align-items: center;
    width: 95%;
    margin: auto;
+   position: relative;
+}
+
+.dropbtn {
+    align-self: center;
+    cursor: pointer;
 }
 
 .profile-header {
     display: grid;
-    grid-template-columns: 3fr 5fr 1fr;
+    grid-template-columns: 2fr 3fr;
+    width: 20%;
+    justify-self: flex-end;
+}
+
+#dropdown-header {
+    justify-self: flex-end;
+    grid-column: 2;
+    grid-row: 2;
+    flex-direction: column;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1B1B1B;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 3em;
+  margin-top: 3em;
+  
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+
+.dropdown-content a:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.show {
+    display: block;
 }
 
 .avatar{
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     margin-bottom: 5%;
 }
 
@@ -35,11 +81,11 @@ header nav {
 }
 
 .arrow-profile{
-    width: 12px;
-    height: 7px;
-    align-items: center;
-    margin-top: 0.8em;
+    width: 14px;
+    height: 8px;
+    align-self: center;
     margin-right: 0.2em;
+    margin-bottom: .4em;
 }
 
 .see-more-btn{
@@ -213,38 +259,5 @@ cursor: pointer;
 }
 
 
-/* PROFILE PAGE */
 
-#profile {
-    display: none;
-    height: 100vh;
-}
-
-.header-profile {
-    display: flex;
-    align-items: center;
-    margin-left: 3em;
-    margin-top: 3em;
-}
-
-.header-profile img {
-    width: 15%;
-}
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1em;
-    margin-bottom: 5em;
-}
-
-.profile-info h1 {
-margin: 0;
-font-size: 3em;
-padding-bottom:.5em;
-}
-
-.profile-info p {
-    font-size: 1.2em;
-}
 

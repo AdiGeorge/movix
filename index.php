@@ -17,9 +17,7 @@
   <?php require_once(__DIR__.'/components/right/right.html') ?> 
 
     
-  <script src="/movix/js/app.js"></script> 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="/movix/js/swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
@@ -34,8 +32,9 @@
       },
     });
     </script>
+     <script src="./js/app.js"></script>
      <!-- Windows path -> <script src="./js/app.js"></script> -->
-    <!-- Mac path -> <script src="/js/app.js"></script> -->
-  
+     <!-- Mac path -> <script src="/js/app.js"></script> -->
+     
 </body>
 </html>
