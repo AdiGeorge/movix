@@ -360,7 +360,7 @@ padding-bottom:.5em;
     height: 100%;
 }
 
-#login-form{
+#login-form {
     background-color: black;
     width: 33%;
     height: 80%;
@@ -386,25 +386,25 @@ padding-bottom:.5em;
 }
 
 
-input.info{
-width: 260px;
-height: 44px;
-border-radius: 22px;
-background: rgba(79, 79, 79, 0.55);
-border: 2px solid  #F2A447;
-margin-top: 8px;
+input.info {
+    width: 260px;
+    height: 44px;
+    border-radius: 22px;
+    background: rgba(79, 79, 79, 0.55);
+    border: 2px solid #F2A447;
+    margin-top: 8px;
 }
 
 h1 {
-  margin: 20px 0px 15px 80px;  
-}
- 
-::placeholder{
-color: white;
-padding-left:10px;
+    margin: 20px 0px 15px 80px;
 }
 
-.rmb-me{
+::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+.rmb-me {
     margin: 10px 0 0 7px;
 }
 
@@ -429,7 +429,7 @@ button.signup{
     background: black;
     font-size: 1em;
     cursor: pointer;
-    }
+}
 
 .or{ 
 font-style: normal;
