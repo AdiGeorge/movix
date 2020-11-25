@@ -8,37 +8,37 @@
     margin: auto;
 }
 
+.friends-container {
+    display: grid;
+    margin-top: 2em;
+}
+
+.grid-friends {
+    display: grid;
+   row-gap: 2em;
+   margin-top: 2em;
+   margin-left: 1.5em;
+}
+
 .friends-title {
-    margin-top: 1em;
-    margin-left: 2em;
-}
-
-.friends {
-    cursor: pointer;
-}
-
-.one-friend {
-    align-items: center;
-    display: flex;
+    justify-self: center;
 }
 
 .friend {
-    margin-top: 0.5em;
-    margin-left: 1em;
-    margin-bottom: 1em;
-    cursor: pointer;
-
+   display:flex;
 }
 
-.friend-name {
-    margin-left: 0.2em;
+
+.one-friend {
+    display: grid;
+    align-self: center;
+    row-gap: .4em;
+    margin-left: .4em;
 }
 
 .watching {
-    margin-left: 3.5em;
     color: gray;
     font-size: 15px;
-    margin-top: -0.4em;
 }
 
 .friends-btn {
@@ -48,5 +48,5 @@
     height: 3em;
     background: linear-gradient(90deg, rgba(244, 118, 80, 1) 0%, rgba(242, 164, 71, 1) 100%);
     margin-top: 2em;
-    margin-left: 2em;
+    justify-self: center;
 }

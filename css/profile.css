@@ -1,0 +1,131 @@
+/* PROFILE PAGE */
+
+#profile {
+    display: none;
+    height: 100%;
+
+}
+
+.header-profile {
+    display: flex;
+    margin-left: 3em;
+    margin-top: 3em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-menu {
+   display: flex;
+   width: 100%;
+}
+
+.profile-menu img {
+    width: 15%;
+    /* height: 50%; */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    margin-bottom: 5em;
+}
+
+.profile-info h1 {
+margin: 0;
+font-size: 3em;
+padding-bottom:.5em;
+}
+
+.profile-info p {
+    font-size: 1.2em;
+}
+
+/* PROFILE NAV */
+
+#history,
+#settings {
+    display: none;
+}
+
+.profile-nav {
+width: 100%;
+margin-top: 3em;
+margin-bottom: 3em;
+}
+
+.profile-nav ul {
+width: 100% !important;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-content: center;
+column-gap: 10em;
+padding-left: 10%;
+}
+
+.profile-nav ul li {
+    font-size: 18px;
+    position: relative;
+
+}
+
+.profile-nav ul .line::before {
+    content: "";
+    background: white;
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    left:-60%;
+    top: 0;
+    right: 0;
+}
+
+
+.tab.active:after{
+    content: "";
+    background: white;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left:7%;
+    top: 2em;
+}
+
+
+/* MAIN */
+
+.container-profile {
+    border-top: 2px solid #838383;
+}
+
+.history-container {
+    display: grid;
+   grid-template-columns: 1fr 13fr;
+}
+
+.history-info {
+    padding-top: 1.6em;
+}
+
+.history-info h3 {
+    font-size: 1.5em;
+    font-family: var(--main-font);
+    padding-bottom: .5em;
+}
+
+.history-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+    width: 15%;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+.history-buttons button {
+    background: transparent;
+    border: 1px solid white;
+    padding: .5em;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
