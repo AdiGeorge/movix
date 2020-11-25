@@ -53,4 +53,31 @@ window.onclick = function(event) {
 }
 
 
+///friends
+var modalFriends = document.getElementById("myModalFriends");
+
+// Get the button that opens the modal
+var btnFriends = document.querySelector(".friends");
+
+// Get the <span> element that closes the modal
+var spanFriends = document.getElementsByClassName("closeFriends")[0];
+
+// When the user clicks the button, open the modal 
+btnFriends.onclick = function() {
+  modalFriends.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanFriends.onclick = function() {
+  modalFriends.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(eventFriends) {
+  if (eventFriends.target == modalFriends) {
+    modalFriends.style.display = "none";
+  }
+}
+
+
 
