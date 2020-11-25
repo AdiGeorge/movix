@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movix</title>
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="/movix/css/app.css">
 </head>
 <body>
   
 
-   <?php require_once(__DIR__.'/components/register/index.html') ?>
+   <?php require_once('components/register/index.html') ?>
     
 
-    
   
-  <!-- <script src="swiper.min.js"></script> -->
+  
+  <!-- <script src="/js/swiper.min.js"></script> -->
 
-   <script src="./js/app.js"></script>
+   <!-- Mac path -> <script src="/js/app.js"></script> -->
+   <script src="/movix/js/register.js"></script>
+
 </body>
 </html>

@@ -56,7 +56,7 @@ for (var i=0; i<acc.length; i++) {
   });
 }
 
-
+////Middle movie modal
 // Get the modal
 var modal = document.getElementById("myModal");
 

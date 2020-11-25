@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <link rel="stylesheet" href="css/register.css">
-    <title>Document</title>
-</head>
-<body>
-    <div id="left-img">
-        <img src="images/firstPage.png" alt="">
-    </div>
-    <div id="right-login-form">
+
+    <div id="register-bg">
+       
+    
+    <div id="login-form">
+        <div class="content">
         <img src="images/logo.png" alt="logo" id="logo">
         <h1>Log in</h1>
         <form>
@@ -21,44 +14,43 @@
             <span>Remember me</span>
         </div><br>
             <button class="login">Log in</button><br>
-            <button class="signup myBtn1">Sign Up</button><br>
+            
+            <button type="button" id="myBtnRegister" class="signup">Sign Up</button><br>
+       
             <span class="or">OR</span><br>
             <button class="facebook">Continue with Facebook</button><br>
             <a href="#" class="forgot-password">Forgot your password?</a>
         </form>
     </div>
-    <div id="myModal" class="modal">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-    
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <span class="modal-title">The Dragon</span>
-            <i class="fa fa-play-circle play-icon"></i>
-    
-            <div class="movie-content">
-                <div class="icons">
-    
-                    <div> <i class="fa fa-thumbs-up"></i></div>
-                    <div class="icon-margin"> <i class="fa fa-thumbs-down"></i></div>
-                    <div class="icon-margin"> <i class="fa fa-slideshare"></i></div>
-                </div>
-                <div class="movie-info">
-                <p class="modal-text">To replace his grandfather at the helm of a cartel, a financier from Tokyo returns home to Mexico
-                    and has to fight two rivals to gain power.</p>
-                    <p class="border-info">Distribution</p>
-                    <p class="border-info icon-margin">Genres</p>
-                    <p class="border-info icon-margin">Type</p>
-                </div>
-             
-                <div class="movie-info">
-                    <p class="border-info">2020</p>
-                    <p class="border-info icon-margin">16+</p>
-                    <p class="border-info icon-margin">1h 35min</p>
-                </div>
-            </div>
-        </div>
-    
     </div>
-</body>
-</html>
+
+</div>
+
+
+<div id="myModalRegister" class="modal-register">
+
+    <!-- Modal content -->
+    <div class="modal-content-register">
+
+        <button type="button" class="closeRegister" data-dismiss="modal">&times;</button>
+        <h1 class="signup-title">Sign up</h1>
+        <div class="content-register">
+                <form>
+                    <input class="modal-info" type="text" placeholder="Name"><br>
+                    <input class="modal-info" type="text" placeholder="Email"><br>
+                     <input class="modal-info" type="password" placeholder="Password"><br>
+                    <div class="modal-rmb-me">
+                    <input type="checkbox">
+                    <span>Remember me</span>
+                </div><br>
+                    <button type="button" onclick="dashboard(); return false" class="signup">Sign Up</button><br>
+                    <span class="or">OR</span><br>
+                    <button class="facebook">Continue with Facebook</button><br>
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </form>
+        
+
+        </div>
+    </div>
+
+</div> 
