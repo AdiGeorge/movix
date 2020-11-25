@@ -1,6 +1,5 @@
 /////////REGISTER MODAL /////////
 
-
 // Get the modal
 var modalRegister = document.getElementById("myModalRegister");
 
@@ -23,6 +22,10 @@ span.onclick = function() {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(eventRegister) {
   if (eventRegister.target == modalRegister) {
-    modalRegister.style.display = "none";
+   modalRegister.style.display = "none";
   }
+}
+
+function dashboard(){
+    window.location.href = "http://www.w3schools.com";
 }

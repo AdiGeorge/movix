@@ -14,7 +14,9 @@
             <span>Remember me</span>
         </div><br>
             <button class="login">Log in</button><br>
-            <button id="myBtnRegister" class="signup">Sign Up</button><br>
+            
+            <button type="button" id="myBtnRegister" class="signup">Sign Up</button><br>
+       
             <span class="or">OR</span><br>
             <button class="facebook">Continue with Facebook</button><br>
             <a href="#" class="forgot-password">Forgot your password?</a>
@@ -25,7 +27,7 @@
 </div>
 
 
-<div id="myModalRegister" class="modal-register" style="display: block;">
+<div id="myModalRegister" class="modal-register">
 
     <!-- Modal content -->
     <div class="modal-content-register">
@@ -41,7 +43,7 @@
                     <input type="checkbox">
                     <span>Remember me</span>
                 </div><br>
-                    <button class="signup myBtnRegister">Sign Up</button><br>
+                    <button type="button" onclick="dashboard(); return false" class="signup">Sign Up</button><br>
                     <span class="or">OR</span><br>
                     <button class="facebook">Continue with Facebook</button><br>
                     <a href="#" class="forgot-password">Forgot your password?</a>
