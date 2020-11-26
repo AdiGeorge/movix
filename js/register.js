@@ -27,5 +27,5 @@ window.onclick = function(eventRegister) {
 }
 
 function dashboard(){
-    window.location.href = "http://www.w3schools.com";
+    window.location.href = "/movix/index.php";
 }

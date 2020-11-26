@@ -25,21 +25,21 @@
                     <button>Start Watching</button>
                 </div>
             </div>
-            <div>
-                <h3>Drama Movies</h3><br>
-                <p>Popular now</p>
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <img class="myBtn" class="swiper-slide" src="images/movie1.png" alt="movie1">
-                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
-                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                        <img class="swiper-slide" src="images/movie1.png" alt="movie1">
-                        <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                        <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                    </div>
+                <div>
+                    <h3>Drama Movies</h3><br>
+                    <p>Popular now</p>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <img class="myBtn" class="swiper-slide" src="images/movie1.png" alt="movie1">
+                            <img class="myBtn2" class="swiper-slide" src="images/movie2.png" alt="movie2">
+                            <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                            <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                            <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                            <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                            <img class="swiper-slide" src="images/movie1.png" alt="movie1">
+                            <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                            <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                        </div>
 
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>

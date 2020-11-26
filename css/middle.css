@@ -1,4 +1,3 @@
-
 #middle {
     position: relative;
     width: 70%;
@@ -75,7 +74,7 @@ header nav {
     margin-bottom: 5%;
 }
 
-.profile-name{
+.profile-name {
     align-items: center;
     margin-top: 0.5em;
 }
@@ -88,7 +87,7 @@ header nav {
     margin-bottom: .4em;
 }
 
-.see-more-btn{
+.see-more-btn {
     color: white;
     border-radius: 27px;
     width: 12em;
@@ -100,7 +99,7 @@ header nav {
     display: block;
 }
 
-.search{
+.search {
     border: 2px solid white;
     border-radius: 27px;
     width: 30em;
@@ -126,7 +125,7 @@ header nav {
     align-items: flex-start;
 }
 
-.video-text h2{
+.video-text h2 {
     font-size: 3em;
     padding-bottom: .3em;
 }
@@ -137,21 +136,21 @@ header nav {
     border-radius: 2em;
     padding: 1em;
     padding-left: 2.5em;
-    width:55%;
+    width: 55%;
     font-size: 1em;
-    background: #fff url(../images/play.png) ;
+    background: #fff url(../images/play.png);
     background-size: 20px;
     background-position: 20px 15px;
     background-repeat: no-repeat;
 }
 
-.header-video:hover .video-text{
+.header-video:hover .video-text {
     opacity: 1;
 }
 
 
 .header-video:hover video {
-    filter:blur(3px) brightness(70%); 
+    filter: blur(3px) brightness(70%);
 }
 
 .header-video video {
@@ -163,101 +162,407 @@ header nav {
     transition: .3s;
 }
 
-/* The Modal (background) */
+/* The MOVIE Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
 
-  .movie-content{
-      margin-top: 16%; 
-  }
-  
-  /* Modal Content */
-  .modal-content {
-   background-image: url("/movix/images/poster.png");
-   background-size: cover;
-    color:white;
+.movie-content {
+    margin-top: 16%;
+}
+
+/* Modal Content */
+.modal-content {
+    background-image: url("/movix/images/poster.png");
+    background-size: cover;
+    color: white;
     margin: auto;
     padding: 20px;
     border: 1px solid white;
     border-radius: 25px;
-    width: 70%;
+    width: 60%;
     height: 80%;
-  }
-  /* The Close Button */
-  .close {
-    color:black;
+}
+
+/* The Close Button */
+.close {
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
     background-color: white !important;
     padding: 0.01em 0.2em 0.01em 0.2em;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: orange;
     text-decoration: none;
     cursor: pointer;
-  }
-
-.icons{
-    display: flex;
 }
 
-.icon-margin{
+.icons-movie {
+    display: flex;
+    font-size: 1.5em
+}
+
+.icon-margin {
     margin-left: 10px;
 }
 
-.modal-content .play-icon{
-font-size: 5em !important;
-margin-left: 45%;
-margin-right: 45%;
-margin-top: 5%;
-cursor: pointer;
+.modal-content .play-icon {
+    font-size: 5em !important;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
 }
 
-.modal-title{
+.play-icon:hover,
+.play-icon:focus {
+   color: orange;
+   transform: scale(1.5);
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-title {
     font-size: 35px;
     margin-left: 39%;
     margin-top: 1em;
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 25%;
     height: 15%;
 }
 
- .movie-info{
-   display: flex;
-} 
+.movie-info-left {
+    /* display: flex; */
+    margin-left: 0;
+}
 
-.modal-text{
+.movie-info-right{
+margin-left: 60%;
+margin-top: -15%;
+}
+
+.details{
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.modal-text {
     font-size: 15px;
     margin-bottom: 5%;
     margin-top: 2%;
-    margin-right: 2%;
+    margin-right: 50%;
+    font-weight: bold;
+    font-family: var(--secondary-font) !important;
 }
 
-.border-info{
-    border: 1px solid #888 !important;
-    width: 6em;
-    height: 2em;
+.border-info-left {
+    border: 2px solid white !important;
+    display: inline;
 }
 
-.myBtn{
+.border-info-right {
+    border: 1px solid white !important;
+    width: 6.5em;
+    height: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 1%;
+}
+.movie-details-right{
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+.myBtn {
     cursor: pointer;
 }
 
+.icon-share{
+    color: white;
+    min-width: 50px;
+    transition: transform .1s;
+}
+
+.icon-share:hover,
+.icon-share:focus {
+   color: orange;
+   transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* MODAL MOVIE --2-- */
+.modal2 {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.myBtn2{
+    cursor: pointer;
+}
+
+.movie-content2 {
+    margin-top: 16%;
+}
+
+/* Modal Content */
+.modal-content2 {
+    background-image: url("/movix/images/poster2.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+}
+
+.modal-content2 .play-icon2 {
+    font-size: 5em !important;
+    margin-left: 45%;
+    margin-right: 45%;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.play-icon2:hover,
+.play-icon2:focus {
+   color: orange;
+   transform: scale(1.5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close2 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white !important;
+    padding: 0.01em 0.2em 0.01em 0.2em;
+}
+
+.close2:hover,
+.close2:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* MODAL FRIENDS */
+
+/* The Modal (background) */
+.modal-friends {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content-friends {
+    background-image: url("/movix/images/friends.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 25px;
+    width: 40%;
+    height: auto;
+}
+
+/* Modal Content */
+.friends-content {
+    margin-top: 8%;
+}
+
+/* The Close Button */
+.close-friends {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background-color: white !important;
+    padding: 0.01em 0.2em 0.01em 0.2em;
+}
+
+.close-friends:hover,
+.close-friends:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.invite-friend {
+    border: 2px solid white;
+    border-radius: 27px;
+    width: 12em;
+    height: 3em;
+    margin-top: 2em;
+    margin-left: 5em;
+    background: none;
+}
+
+.invite-friend:hover,
+.invite-friend:focus {
+    background: linear-gradient(90deg, rgba(244, 118, 80, 1) 0%, rgba(242, 164, 71, 1) 100%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.friends-title-modal {
+    font-size: 25px;
+    margin-left: 39%;
+    margin-top: 1em;
+}
+
+.friend-modal {
+    margin-top: 0.5em;
+    margin-left: 5em;
+    margin-bottom: 0.1em;
+    display: flex;
+}
+
+.one-friend-modal {
+    /* align-items: center;
+    display: flex; */
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.friend-name-modal {
+    margin-left: 0.2em;
+}
+
+.watching-friend-modal {
+    color: gray;
+    font-size: 15px;
+    margin-top: 0.5em;
+}
+.avatar-modal{
+    height: 60%;
+    margin-top: 5%;
+}
+
+.start-btn {
+    border: 2px solid white;
+    border-radius: 27px;
+    width: 12em;
+    height: 3em;
+    margin-top: 2em;
+    margin-left: 2em;
+    background: none;
+    margin-left: 33%;
+
+}
+
+.start-btn:hover,
+.start-btn:focus {
+    background: linear-gradient(90deg, rgba(244, 118, 80, 1) 0%, rgba(242, 164, 71, 1) 100%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.search-friends {
+    border-bottom: 2px solid white !important;
+    width: 30em;
+    height: 3em;
+    cursor: pointer;
+    border-style: hidden;
+    background: none;
+}
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    margin-bottom: 10px;
+    margin-left: 26%;
+    margin-top: 5%;
+}
+
+.icon {
+    padding: 10px;
+    color: white;
+    min-width: 50px;
+
+}
+
+.input-field {
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+}
 
 
 
