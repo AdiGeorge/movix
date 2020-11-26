@@ -28,7 +28,7 @@
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <img class="myBtn" class="swiper-slide" src="images/movie1.png" alt="movie1">
-                            <img class="swiper-slide" src="images/movie2.png" alt="movie2">
+                            <img class="myBtn2" class="swiper-slide" src="images/movie2.png" alt="movie2">
                             <img class="swiper-slide" src="images/movie3.png" alt="movie3">
                             <img class="swiper-slide" src="images/movie1.png" alt="movie1">
                             <img class="swiper-slide" src="images/movie2.png" alt="movie2">
