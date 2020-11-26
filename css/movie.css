@@ -1,0 +1,129 @@
+#film video {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-width: 80%; 
+    min-height: 100%;
+}
+
+#moviePage nav {
+    width: 82%;
+    height: 4em;
+    background:var(--main-bg-color); 
+    position: absolute;
+    z-index: 2;
+}
+
+.logo-chat .logo {
+    width: 5%;
+    float:left;
+}
+
+#pause, #play {
+    position: absolute;
+    /* font-size: 18px; */
+    border: none;
+    background: none;
+    cursor: pointer;
+    top:48%;
+    left:40%;
+}
+
+#pause:active {
+    border: none;
+    outline: none;
+
+}
+#pause:focus {outline:0;}
+#play:focus {outline:0;}
+
+#pause img,#play img {
+    display: block;
+    width: 100px;
+    margin: 0;
+    fill: #fff;
+}
+
+#play {
+    display: none;
+    width: 100px;
+}
+
+
+/* CHAT */
+
+#chat {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    background:var(--main-bg-color);
+    width: 18%;
+}
+
+
+.chat-container {
+    display: grid;
+    grid-template-rows: 1fr 7fr 2fr;
+    height: 100%;
+}
+
+.chat-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.closeBtn-container{
+    justify-self: end;
+}
+
+.chat-top button {
+    color: black;
+    width: 2em;
+    height: 2em;
+}
+
+.friend1 {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.friend1 p {
+    width: 60%;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: .7em;
+}
+
+ .input-chat {
+     display: block;
+     align-self: end;
+     justify-self: center;
+     width: 90%;
+    margin-bottom: 1em;
+ }
+
+ .input-chat input{
+    width: 100%;
+    height: 4em;
+    border-radius: 10px;
+    color: black;
+ }
+ .input-chat input:focus{
+     outline: none;
+ }
+
+ .input-chat input::placeholder{
+     color: #ccc;
+ }
+
+.chat-icon {
+    position: absolute;
+    /* z-index: 1; */
+    bottom:5em;
+    right: 0;
+    /* display: none; */
+}
+
+
