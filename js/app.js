@@ -160,10 +160,13 @@ spanFriends.onclick = function() {
 
 // Get the button, and when the user clicks on it, execute myFunction
 document.querySelector(".arrow-profile").onclick = function() {dropdown()};
+document.querySelector(".categ-dropdown-arrow").onclick = function() {dropdown()};
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function dropdown() {
     document.getElementById("dropdown-header").classList.toggle("show");
+    document.querySelector(".categ-dropdown-arrow").classList.toggle("show");
+    
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -182,3 +185,20 @@ window.onclick = function(event) {
   }
 }
 
+function openCateg(){
+  document.querySelector('.titles-mobile').style.display="block"
+  console.log('x');
+}
+
+function showChat() {
+  var chat = document.querySelector(".chat-container");
+  var chat = document.querySelector(".chat-container");
+  var film = document.querySelector("#film-container");
+  var chatcontainer = document.querySelector("#chat");
+  var nav =  document.querySelector(".logo-chat");
+  chat.style.display = "grid"
+  film.style.minWidth = "80%"
+  chatcontainer.style.width="18%";
+  nav.style.width="82%"
+  chat.style.display="grid"
+}

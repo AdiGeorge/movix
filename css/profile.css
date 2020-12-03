@@ -2,7 +2,7 @@
 
 #profile {
     display: none;
-    height: 100%;
+   
 
 }
 
@@ -21,14 +21,14 @@
 
 .profile-menu img {
     width: 15%;
-    /* height: 50%; */
+    height: 50%;
 }
 
 .profile-info {
     display: flex;
     flex-direction: column;
     padding-left: 1em;
-    margin-bottom: 5em;
+   justify-content: center;
 }
 
 .profile-info h1 {
@@ -51,11 +51,11 @@ padding-bottom:.5em;
 .profile-nav {
 width: 100%;
 margin-top: 3em;
-margin-bottom: 3em;
+margin-bottom: 1.5em;
 }
 
 .profile-nav ul {
-width: 100% !important;
+width: 100% ;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 justify-content: center;
@@ -128,4 +128,78 @@ padding-left: 10%;
     padding: .5em;
     font-size: 1.1em;
     border-radius: 10px;
+}
+
+/* MOBILE */
+
+@media(max-width: 400px) {
+
+    .header-profile {
+        margin: 0;
+    }
+
+    .profile-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .profile-menu img {
+        width: 25%;
+    }
+
+    .profile-info{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .profile-info h1 {
+        font-size: 1.4em;
+    }
+
+    .profile-info p{
+        font-size: 1em;
+    }
+
+    .profile-nav {
+        margin: 0;
+      
+    }
+
+    .profile-nav ul {
+     
+       column-gap: 1.5em;
+    }
+
+    .profile-nav ul li {
+        font-size: .8em;
+        margin-bottom: 1em;
+    }
+
+    .profile-nav ul .line::before {
+        width: 2px;
+        height: 100%;
+        left: -2em;
+       
+    }
+
+    .tab.active:after {
+        content: "";
+        background: white;
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        left: 2.4em;
+        top: 1.5em;
+    }
+
+    .fav-movies h1,
+    .fav-series h1 {
+        font-size: 1.2em;
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+
+
 }
