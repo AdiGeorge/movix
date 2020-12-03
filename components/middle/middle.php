@@ -19,12 +19,15 @@
     </header>
     <main class="container">
         <div id="home" class="subpage">
+            
             <div class="header-video">
-                <video src="images/trailer.mp4" autoplay loop muted></video>
+            <!-- <div id="animation">Text</div> -->
+                <video id="movieDisplay" src="images/trailer.mp4" autoplay loop muted></video>
                 <div class="video-text">
-                    <h2>Queen's Gambit</h2>
+                    <h2 id="movieName">Queen's Gambit</h2>
                     <button>Start Watching</button>
                 </div>
+                
             </div>
             <div class="categories-mobile">
                 <div class="movies-mobile-categ">
@@ -88,7 +91,7 @@
                             <img class="swiper-slide" src="images/movie2.png" alt="movie2">
                             <img class="swiper-slide" src="images/movie3.png" alt="movie3">
                         </div>
-
+                   
                     <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
                     <!-- Add Arrows -->

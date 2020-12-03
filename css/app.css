@@ -68,6 +68,7 @@
     height: 4em;
     background: linear-gradient(90deg, rgba(244,118,80,1) 0%, rgba(242,164,71,1) 100%);
     margin-top: 2em;
+    cursor: pointer !important;
 }
 
 .random-btn .random-icon{
@@ -288,6 +289,7 @@ header nav {
     background-repeat: no-repeat;
 }
 
+
 .header-video:hover .video-text {
     opacity: 1;
 }
@@ -349,8 +351,10 @@ header nav {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 20%;
+    border: none;
     background-color: white !important;
-    padding: 0.01em 0.2em 0.01em 0.2em;
+    padding: 0.01em 0.3em 0.01em 0.3em;
 }
 
 .swiper-button-prev,
@@ -374,6 +378,10 @@ header nav {
 .icon-margin {
     margin-left: 10px;
 }
+
+/* .play-icon{
+    background-image: url("/movix/images/playIconModal.png");
+} */
 
 .modal-content .play-icon {
     font-size: 3em !important;
@@ -527,8 +535,10 @@ header nav {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 20%;
+    border: none;
     background-color: white !important;
-    padding: 0.01em 0.2em 0.01em 0.2em;
+    padding: 0.01em 0.3em 0.01em 0.3em;
 }
 
 .close2:hover,
@@ -593,8 +603,10 @@ header nav {
     right: 10px;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 20%;
+    border: none;
     background-color: white !important;
-    padding: 0.01em 0.2em 0.01em 0.2em;
+    padding: 0.01em 0.3em 0.01em 0.3em;
 }
 
 .close-friends:hover,
@@ -717,6 +729,24 @@ header nav {
 header nav .logo {
     display: none;
 }
+
+
+/* ANIMATIOM RANDOM */
+.random-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounceInRight; /* rotateOut flipInX referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+  }
+
+  /* ANIMATIOM BTN RANDOM */
+.animation-btn:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: rotateOut; /* rotateOut flipInX referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
 
 /* MOBILE */
 
@@ -850,7 +880,6 @@ header nav .logo {
 }
 
 /* MODAL */
-
 
 
 }#film video {

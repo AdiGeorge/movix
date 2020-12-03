@@ -29,4 +29,4 @@ foreach(glob('./js/*') as $filename){
 }
 
 // echo $sJs;
-file_put_contents(__DIR__.'js/pp.js', $sJs);
+//file_put_contents(__DIR__.'js/app.js', $sJs);
