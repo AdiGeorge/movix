@@ -7,7 +7,7 @@
         <source  src="./images/trailer.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
         </video>   
-        <img class="chat-icon" src="./images/chat-icon.png" alt="">
+        <img class="chat-icon" onclick="showChat(); return false" src="./images/chat-icon.png" alt="">
         <!-- <button id="pause" onclick="pauseFilm()"><img src="./images/pause.svg" alt="pause"></button>
         <button id="play" onclick="pauseFilm()"><img src="./images/play.png" alt="pause"></button> -->                                        
     </div>
