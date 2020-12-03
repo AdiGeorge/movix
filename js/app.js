@@ -159,13 +159,14 @@ spanFriends.onclick = function () {
 
 
 // Get the button, and when the user clicks on it, execute myFunction
-document.querySelector(".arrow-profile").onclick = function () {
-  dropdown()
-};
+document.querySelector(".arrow-profile").onclick = function() {dropdown()};
+document.querySelector(".categ-dropdown-arrow").onclick = function() {dropdown()};
 
 /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function dropdown() {
-  document.getElementById("dropdown-header").classList.toggle("show");
+    document.getElementById("dropdown-header").classList.toggle("show");
+    document.querySelector(".categ-dropdown-arrow").classList.toggle("show");
+    
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -237,13 +238,13 @@ function newMovie() {
     movie.src = movies[randomMovie].moviePath;
     movie.load();
     document.getElementById('movieName').innerHTML = movies[randomMovie].movieName;
-  }, 1000);
+  }, 3000);
 
 }
 
 
 function buildAnimation() {
-  for (var i = 0; i < 2; i++) {
+  for (var i = 0; i < 6; i++) {
     testLoop(i);
   }
 
@@ -264,4 +265,22 @@ function testLoop(i) {
     change.offsetHeight; /* trigger reflow */
     change.style.animation = null;
   }, 500 * i);
+}
+
+function openCateg(){
+  document.querySelector('.titles-mobile').style.display="block"
+  console.log('x');
+}
+
+function showChat() {
+  var chat = document.querySelector(".chat-container");
+  var chat = document.querySelector(".chat-container");
+  var film = document.querySelector("#film-container");
+  var chatcontainer = document.querySelector("#chat");
+  var nav =  document.querySelector(".logo-chat");
+  chat.style.display = "grid"
+  film.style.minWidth = "80%"
+  chatcontainer.style.width="18%";
+  nav.style.width="82%"
+  chat.style.display="grid"
 }

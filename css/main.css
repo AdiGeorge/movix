@@ -12,6 +12,8 @@
     color:white;
     font-family: var(--main-font);
 }
+
+
 ul {
     list-style: none;
 }
@@ -24,3 +26,13 @@ a {
   text-decoration: none;
 }
   
+/* MOBILE */
+
+@media(max-width: 400px) { 
+    #right {
+        display: none;
+    }
+
+
+
+}

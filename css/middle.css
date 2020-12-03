@@ -3,7 +3,6 @@
     width: 70%;
     height: 100%;
     padding: 0;
-    /* padding-top: 2em; */
     margin: auto;
     background: linear-gradient(180deg, #424242 0%, #111111 50%);
 }
@@ -28,6 +27,12 @@ header nav {
     grid-template-columns: 2fr 3fr;
     width: 20%;
     justify-self: flex-end;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.categories-mobile {
+    display: none;
 }
 
 #dropdown-header {
@@ -85,6 +90,8 @@ header nav {
     align-self: center;
     margin-right: 0.2em;
     margin-bottom: .4em;
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .see-more-btn {
@@ -99,12 +106,19 @@ header nav {
     display: block;
 }
 
+.random-mobile {
+    display: none;
+}
+
 .search {
     border: 2px solid white;
     border-radius: 27px;
     width: 30em;
     height: 3em;
     background: black;
+    grid-column: 1;
+    grid-row: 1;
+    align-self:center;
 }
 
 .header-video {
@@ -163,35 +177,27 @@ header nav {
     transition: .3s;
 }
 
-/* The MOVIE Modal (background) */
+
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
 }
 
 .movie-content {
-    margin-top: 16%;
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
 }
 
-/* Modal Content */
 .modal-content {
     background-image: url("/movix/images/poster.png");
     background-size: cover;
@@ -202,6 +208,10 @@ header nav {
     border-radius: 25px;
     width: 60%;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 
 /* The Close Button */
@@ -214,6 +224,12 @@ header nav {
     border: none;
     background-color: white !important;
     padding: 0.01em 0.3em 0.01em 0.3em;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: url(../images/next-icon.svg) !important;
+    width: 100px !important;
 }
 
 .close:hover,
@@ -237,12 +253,11 @@ header nav {
 } */
 
 .modal-content .play-icon {
-    font-size: 5em !important;
-    margin-left: 45%;
-    margin-right: 45%;
+    font-size: 3em !important;
     margin-top: 5%;
     cursor: pointer;
     transition: transform .1s;
+ 
 }
 
 .play-icon:hover,
@@ -254,34 +269,31 @@ header nav {
 }
 .modal-title {
     font-size: 35px;
-    margin-left: 39%;
     margin-top: 1em;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
-    width: 25%;
-    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
+
 
 .movie-info-left {
-    /* display: flex; */
-    margin-left: 0;
-}
-
-.movie-info-right{
-margin-left: 60%;
-margin-top: -15%;
+    width: 50%;
 }
 
 .details{
     display: flex;
     margin-bottom: 10%;
+    align-items: center;
 }
 
 .modal-text {
     font-size: 15px;
     margin-bottom: 5%;
     margin-top: 2%;
-    margin-right: 50%;
     font-weight: bold;
     font-family: var(--secondary-font) !important;
 }
@@ -291,7 +303,7 @@ margin-top: -15%;
     display: inline;
 }
 
-.border-info-right {
+.details span {
     border: 1px solid white !important;
     width: 6.5em;
     height: 1.5em;
@@ -300,9 +312,10 @@ margin-top: -15%;
     font-size: 14px;
     margin-top: 1%;
 }
-.movie-details-right{
+
+.details p {
     font-size: 14px;
-    margin-left: 5%;
+    margin-left: 1em;
 }
 
 .myBtn {
@@ -322,9 +335,6 @@ margin-top: -15%;
     text-decoration: none;
     cursor: pointer;
 }
-
-
-
 
 /* MODAL MOVIE --2-- */
 .modal2 {
@@ -415,25 +425,17 @@ margin-top: -15%;
 /* The Modal (background) */
 .modal-friends {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+    
 }
 
 /* Modal Content */
@@ -441,11 +443,19 @@ margin-top: -15%;
     background-image: url("/movix/images/friends.png");
     background-size: cover;
     color: white;
-    margin: auto;
     padding: 20px;
+    margin: auto;
     border-radius: 25px;
-    width: 40%;
+    width: 30%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-section-friends {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 /* Modal Content */
@@ -456,7 +466,10 @@ margin-top: -15%;
 /* The Close Button */
 .close-friends {
     color: black;
+    position: absolute;
     float: right;
+    top: 10px;
+    right: 10px;
     font-size: 28px;
     font-weight: bold;
     border-radius: 20%;
@@ -475,7 +488,7 @@ margin-top: -15%;
 .invite-friend {
     border: 2px solid white;
     border-radius: 27px;
-    width: 12em;
+    width: 20%;
     height: 3em;
     margin-top: 2em;
     margin-left: 5em;
@@ -489,11 +502,15 @@ margin-top: -15%;
     cursor: pointer;
 }
 
+.friends-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .friends-title-modal {
     font-size: 25px;
-    margin-left: 39%;
-    margin-top: 1em;
+    margin-top:2em;
 }
 
 .friend-modal {
@@ -558,7 +575,6 @@ margin-top: -15%;
 
 .input-icons {
     margin-bottom: 10px;
-    margin-left: 26%;
     margin-top: 5%;
 }
 
@@ -570,9 +586,17 @@ margin-top: -15%;
 }
 
 .input-field {
-    width: 60%;
+    width: 100%;
     padding: 10px;
     text-align: center;
+}
+
+.mobiletitle {
+    display: none;
+}
+
+header nav .logo {
+    display: none;
 }
 
 
@@ -592,3 +616,139 @@ margin-top: -15%;
     animation: rotateOut; /* rotateOut flipInX referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; /* don't forget to set a duration! */
   }
+
+/* MOBILE */
+
+@media(max-width: 400px) {
+ 
+header nav .search {
+    display: none;
+} 
+
+#middle {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4.4em;
+    background: linear-gradient(180deg, #424242 0%, #111111 100%);
+
+}
+
+header nav {
+    grid-template-columns:10fr  10fr 10fr ;
+    margin: 0;
+    z-index: 1;
+}
+
+header nav .arrow-profile {
+    justify-self: end;
+}
+
+
+header nav .logo {
+    display: block;
+    width: 6em;
+}
+
+.search {
+    width:15em;
+    height: 3em;
+}
+
+.profile-name{
+    margin-left: .5em;
+}
+
+.header-video{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    margin-bottom: 5em;
+}
+
+
+.header-video .video-text {
+    opacity: 1;
+    bottom: 2em;
+
+}
+
+.header-video .video-text h2 {
+    font-size: 1.5em;
+}
+
+.header-video .video-text button{
+    height: 2em;
+    font-size: .9em;
+    width: 85%;
+    padding: 0;
+    padding-left: 1em;
+    background-position: 5px 8px;
+    background-size: 15px;
+}
+
+.header-video video{
+    position: relative;
+    height: 300px;
+}
+
+.categories-mobile {
+    margin-top: 12.8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #111111;
+   padding-top: 1em;
+   padding-bottom: 1em;
+}
+
+.movies-mobile-categ {
+    display: flex;
+    align-items: center;
+    
+}
+
+.movies-mobile-categ img {
+    margin: 0;
+    width: 11px;
+    margin-left: .3em;
+    height: 7px;
+}
+
+
+.random-mobile {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    align-items: center;
+    padding: 1em;
+}
+
+.random-mobile .random-btn{
+    width: 8em;
+    height: 2.5em;
+    margin: 0;
+}
+
+.random-mobile p{
+    margin-top: .5em;
+    font-size: .9em;
+}
+
+.swipper-container .swipper-wrapper{
+    width: 1em !important;
+}
+
+.titles-mobile {
+    display: none;
+    margin-left: 2.2em;
+}
+
+/* MODAL */
+
+
+}

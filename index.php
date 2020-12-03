@@ -10,7 +10,7 @@
 
     <!-- Windows path -> <link rel="stylesheet" href="./css/app.css"> -->
      <!-- Mac path -> <link rel="stylesheet" href="/movix/css/app.css"> -->
-    <link rel="stylesheet" href="/movix/css/app.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 <body>
   
