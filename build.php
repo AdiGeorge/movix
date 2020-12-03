@@ -16,7 +16,7 @@ foreach(glob('./css/*') as $filename){
 // echo $sData;
 //Mac path -> file_put_contents(__DIR__.'/css/app.css', $sCss);
 //Windows path -> file_put_contents(__DIR__.'../css/app.css', $sCss);
-file_put_contents(__DIR__.'./css/app.css', $sCss);
+file_put_contents(__DIR__.'/css/app.css', $sCss);
 
 exit();
 
@@ -29,4 +29,4 @@ foreach(glob('./js/*') as $filename){
 }
 
 // echo $sJs;
-file_put_contents(__DIR__.'js/pp.js', $sJs);
+//file_put_contents(__DIR__.'js/app.js', $sJs);

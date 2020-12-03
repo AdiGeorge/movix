@@ -144,6 +144,7 @@ header nav {
     background-repeat: no-repeat;
 }
 
+
 .header-video:hover .video-text {
     opacity: 1;
 }
@@ -209,8 +210,10 @@ header nav {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 20%;
+    border: none;
     background-color: white !important;
-    padding: 0.01em 0.2em 0.01em 0.2em;
+    padding: 0.01em 0.3em 0.01em 0.3em;
 }
 
 .close:hover,
@@ -228,6 +231,10 @@ header nav {
 .icon-margin {
     margin-left: 10px;
 }
+
+/* .play-icon{
+    background-image: url("/movix/images/playIconModal.png");
+} */
 
 .modal-content .play-icon {
     font-size: 5em !important;
@@ -387,8 +394,10 @@ margin-top: -15%;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 20%;
+    border: none;
     background-color: white !important;
-    padding: 0.01em 0.2em 0.01em 0.2em;
+    padding: 0.01em 0.3em 0.01em 0.3em;
 }
 
 .close2:hover,
@@ -450,8 +459,10 @@ margin-top: -15%;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    border-radius: 20%;
+    border: none;
     background-color: white !important;
-    padding: 0.01em 0.2em 0.01em 0.2em;
+    padding: 0.01em 0.3em 0.01em 0.3em;
 }
 
 .close-friends:hover,
@@ -565,4 +576,19 @@ margin-top: -15%;
 }
 
 
+/* ANIMATIOM RANDOM */
+.random-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounceInRight; /* rotateOut flipInX referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+  }
 
+  /* ANIMATIOM BTN RANDOM */
+.animation-btn:hover {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: rotateOut; /* rotateOut flipInX referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
