@@ -238,13 +238,13 @@ function newMovie() {
     movie.src = movies[randomMovie].moviePath;
     movie.load();
     document.getElementById('movieName').innerHTML = movies[randomMovie].movieName;
-  }, 3000);
+  }, 1000);
 
 }
 
 
 function buildAnimation() {
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 2; i++) {
     testLoop(i);
   }
 
