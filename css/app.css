@@ -379,9 +379,13 @@ header nav {
     margin-left: 10px;
 }
 
-/* .play-icon{
-    background-image: url("/movix/images/playIconModal.png");
-} */
+.icons-like-dislike:hover,
+.icons-like-dislike:focus{
+    color:#E67D4F;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 
 .modal-content .play-icon {
     font-size: 3em !important;
@@ -394,15 +398,18 @@ header nav {
 .play-icon:hover,
 .play-icon:focus {
    color: orange;
-   transform: scale(1.5);
+   transform: scale(1.2);
     text-decoration: none;
     cursor: pointer;
+}
+.modal-title span{
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 2%;
 }
 .modal-title {
     font-size: 35px;
     margin-top: 1em;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -461,7 +468,7 @@ header nav {
 
 .icon-share:hover,
 .icon-share:focus {
-   color: orange;
+   color: #E67D4F;
    transform: scale(1.2);
     text-decoration: none;
     cursor: pointer;
@@ -470,25 +477,16 @@ header nav {
 /* MODAL MOVIE --2-- */
 .modal2 {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
 }
 
 .myBtn2{
@@ -496,7 +494,9 @@ header nav {
 }
 
 .movie-content2 {
-    margin-top: 16%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 /* Modal Content */
@@ -510,12 +510,13 @@ header nav {
     border-radius: 25px;
     width: 60%;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .modal-content2 .play-icon2 {
-    font-size: 5em !important;
-    margin-left: 45%;
-    margin-right: 45%;
+    font-size: 3em !important;
     margin-top: 5%;
     cursor: pointer;
     transition: transform .1s;
@@ -524,7 +525,7 @@ header nav {
 .play-icon2:hover,
 .play-icon2:focus {
    color: orange;
-   transform: scale(1.5);
+   transform: scale(1.2);
     text-decoration: none;
     cursor: pointer;
 }
@@ -548,6 +549,545 @@ header nav {
     cursor: pointer;
 }
 
+
+/* MODAL MOVIE --3-- */
+.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myBtn3{
+    cursor: pointer;
+}
+
+.movie-content3 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Modal Content */
+.modal-content3 {
+    background-image: url("/movix/images/poster3.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-content3 .play-icon3 {
+    font-size: 3em !important;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.play-icon3:hover,
+.play-icon3:focus {
+   color: orange;
+   transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close3 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 20%;
+    border: none;
+    background-color: white !important;
+    padding: 0.01em 0.3em 0.01em 0.3em;
+}
+
+.close3:hover,
+.close3:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* MODAL 3 end */
+
+
+/* MODAL MOVIE --4-- */
+.modal4 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myBtn4{
+    cursor: pointer;
+}
+
+.movie-content4 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Modal Content */
+.modal-content4 {
+    background-image: url("/movix/images/poster4.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-content4 .play-icon4 {
+    font-size: 3em !important;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.play-icon4:hover,
+.play-icon4:focus {
+   color: orange;
+   transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close4 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 20%;
+    border: none;
+    background-color: white !important;
+    padding: 0.01em 0.3em 0.01em 0.3em;
+}
+
+.close4:hover,
+.close4:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* MODAL 4 end */
+
+
+/* MODAL MOVIE --5-- */
+.modal5 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myBtn5{
+    cursor: pointer;
+}
+
+.movie-content5 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Modal Content */
+.modal-content5 {
+    background-image: url("/movix/images/poster5.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-content5 .play-icon5 {
+    font-size: 3em !important;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.play-icon5:hover,
+.play-icon5:focus {
+   color: orange;
+   transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close5 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 20%;
+    border: none;
+    background-color: white !important;
+    padding: 0.01em 0.3em 0.01em 0.3em;
+}
+
+.close5:hover,
+.close5:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* MODAL 5 end */
+
+
+
+/* MODAL MOVIE --6-- */
+.modal6 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myBtn6{
+    cursor: pointer;
+}
+
+.movie-content6 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Modal Content */
+.modal-content6 {
+    background-image: url("/movix/images/poster6.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-content6 .play-icon6 {
+    font-size: 3em !important;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.play-icon6:hover,
+.play-icon6:focus {
+   color: orange;
+   transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close6 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 20%;
+    border: none;
+    background-color: white !important;
+    padding: 0.01em 0.3em 0.01em 0.3em;
+}
+
+.close6:hover,
+.close6:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* MODAL 6 end */
+
+
+/* MODAL MOVIE --7-- */
+.modal7 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myBtn7{
+    cursor: pointer;
+}
+
+.movie-content7 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Modal Content */
+.modal-content7 {
+    background-image: url("/movix/images/poster7.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-content7 .play-icon7 {
+    font-size: 3em !important;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.play-icon7:hover,
+.play-icon7:focus {
+   color: orange;
+   transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close7 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 20%;
+    border: none;
+    background-color: white !important;
+    padding: 0.01em 0.3em 0.01em 0.3em;
+}
+
+.close7:hover,
+.close7:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* MODAL 7 end */
+
+
+/* MODAL MOVIE --8-- */
+.modal8 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myBtn8{
+    cursor: pointer;
+}
+
+.movie-content8 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Modal Content */
+.modal-content8 {
+    background-image: url("/movix/images/poster8.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-content8 .play-icon8 {
+    font-size: 3em !important;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.play-icon8:hover,
+.play-icon8:focus {
+   color: orange;
+   transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close8 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 20%;
+    border: none;
+    background-color: white !important;
+    padding: 0.01em 0.3em 0.01em 0.3em;
+}
+
+.close8:hover,
+.close8:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* MODAL 8 end */
+
+
+/* MODAL MOVIE --9-- */
+.modal9 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.myBtn9{
+    cursor: pointer;
+}
+
+.movie-content9 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Modal Content */
+.modal-content9 {
+    background-image: url("/movix/images/poster9.png");
+    background-size: cover;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-content9 .play-icon9 {
+    font-size: 3em !important;
+    margin-top: 5%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.play-icon9:hover,
+.play-icon9:focus {
+   color: orange;
+   transform: scale(1.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Close Button */
+.close9 {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 20%;
+    border: none;
+    background-color: white !important;
+    padding: 0.01em 0.3em 0.01em 0.3em;
+}
+
+.close9:hover,
+.close9:focus {
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* MODAL 9 end */
 
 
 

@@ -83,13 +83,13 @@
                         <div class="swiper-wrapper">
                             <img class="swiper-slide myBtn" src="images/movie1.png" alt="movie1">
                             <img class="swiper-slide myBtn2" src="images/movie2.png" alt="movie2">
-                            <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                            <img class="swiper-slide" src="images/movie1.png" alt="movie1">
-                            <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                            <img class="swiper-slide" src="images/movie3.png" alt="movie3">
-                            <img class="swiper-slide" src="images/movie1.png" alt="movie1">
-                            <img class="swiper-slide" src="images/movie2.png" alt="movie2">
-                            <img class="swiper-slide" src="images/movie3.png" alt="movie3">
+                            <img class="swiper-slide myBtn3" src="images/movie3.png" alt="movie3">
+                            <img class="swiper-slide myBtn4" src="images/movie1.png" alt="movie1">
+                            <img class="swiper-slide myBtn5" src="images/movie2.png" alt="movie2">
+                            <img class="swiper-slide myBtn6" src="images/movie3.png" alt="movie3">
+                            <img class="swiper-slide myBtn7" src="images/movie1.png" alt="movie1">
+                            <img class="swiper-slide myBtn8" src="images/movie2.png" alt="movie2">
+                            <img class="swiper-slide myBtn9" src="images/movie3.png" alt="movie3">
                         </div>
                    
                     <!-- Add Pagination -->
