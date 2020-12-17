@@ -9,7 +9,7 @@
 
 </head>
 <body>
-<?php require_once(__DIR__.'/components/movie/movie.php') ?>
+<?php require_once(__DIR__.'./components/movie/movie.php') ?>
 
 
 <script src="./js/app.js"></script>

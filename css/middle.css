@@ -177,6 +177,17 @@ header nav {
     transition: .3s;
 }
 
+.genre-title {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    margin-bottom: 2em;
+}
+.genre-subcateg {
+    font-size: 1.3em;
+    margin-left: 3em;
+    font-weight: 700;
+}
 
 .modal {
     display: none;
@@ -224,12 +235,6 @@ header nav {
     border: none;
     background-color: white !important;
     padding: 0.01em 0.3em 0.01em 0.3em;
-}
-
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-    background-image: url(../images/next-icon.svg) !important;
-    width: 100px !important;
 }
 
 .close:hover,
@@ -1143,8 +1148,6 @@ header nav .logo {
 /* ANIMATIOM RANDOM */
 .random-element {
     display: inline-block;
-    margin: 0 0.5rem;
-  
     animation: bounceInRight; /* rotateOut flipInX referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
   }

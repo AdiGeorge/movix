@@ -183,18 +183,20 @@
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-    background-image: url(../images/next-icon.svg);
+    background-image: url(../images/arrow-left.png);
     left: 10px;
     right: auto;
-    fill:white !important;
+    background-size: 50px;
+    fill: white;
 }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-    background-image: url(../images/next-icon.svg);
+    background-image: url(../images/arrow-right.png);
     right: 10px;
     left: auto;
     background-size: 50px;
+    fill: white;
 }
 
 .swiper-button-prev.swiper-button-white,

@@ -64,8 +64,8 @@
 .random-btn{
     border: 2px solid white;
     border-radius: 27px;
-    width: 12em;
-    height: 4em;
+    width: 10em;
+    height: 3em;
     background: linear-gradient(90deg, rgba(244,118,80,1) 0%, rgba(242,164,71,1) 100%);
     margin-top: 2em;
     cursor: pointer !important;
@@ -94,7 +94,7 @@
     
     }:root {
     --main-bg-color: #1B1B1B;
-    --main-font: 'Gotham';
+    --main-font: 'Montserrat', sans-serif;
     --secondary-font: 'Roboto';
     --orange: #E67C4F;
 }
@@ -308,6 +308,17 @@ header nav {
     transition: .3s;
 }
 
+.genre-title {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-left: 2.5em;
+    margin-bottom: 2em;
+}
+.genre-subcateg {
+    font-size: 1.3em;
+    margin-left: 3em;
+    font-weight: 700;
+}
 
 .modal {
     display: none;
@@ -355,12 +366,6 @@ header nav {
     border: none;
     background-color: white !important;
     padding: 0.01em 0.3em 0.01em 0.3em;
-}
-
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-    background-image: url(../images/next-icon.svg) !important;
-    width: 100px !important;
 }
 
 .close:hover,
@@ -1274,8 +1279,6 @@ header nav .logo {
 /* ANIMATIOM RANDOM */
 .random-element {
     display: inline-block;
-    margin: 0 0.5rem;
-  
     animation: bounceInRight; /* rotateOut flipInX referring directly to the animation's @keyframe declaration */
     animation-duration: 3s; /* don't forget to set a duration! */
   }
@@ -1510,6 +1513,7 @@ header nav .logo {
 .friend1 {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    margin-bottom: 1em;
 }
 
 .friend1 p {
@@ -1518,6 +1522,21 @@ header nav .logo {
     color: black;
     border-radius: 10px;
     padding: .7em;
+}
+
+.myself {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.myself p{
+    width: 60%;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: .7em;
+    margin-right: .5em;
+    justify-self: end;
 }
 
  .input-chat {
@@ -1659,6 +1678,9 @@ padding-left: 10%;
 .history-info {
     padding-top: 1.6em;
 }
+.history-info p {
+    width: 80%;
+}
 
 .history-info h3 {
     font-size: 1.5em;
@@ -1681,6 +1703,17 @@ padding-left: 10%;
     padding: .5em;
     font-size: 1.1em;
     border-radius: 10px;
+}
+
+.settings-container {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-container p {
+    font-size: 4em;
 }
 
 /* MOBILE */
@@ -2191,18 +2224,20 @@ input.modal-info {
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-    background-image: url(../images/next-icon.svg);
+    background-image: url(../images/arrow-left.png);
     left: 10px;
     right: auto;
-    fill:white !important;
+    background-size: 50px;
+    fill: white;
 }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-    background-image: url(../images/next-icon.svg);
+    background-image: url(../images/arrow-right.png);
     right: 10px;
     left: auto;
     background-size: 50px;
+    fill: white;
 }
 
 .swiper-button-prev.swiper-button-white,

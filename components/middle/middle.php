@@ -77,8 +77,8 @@
                 </div>
             </div>
                 <div class="movies-container">
-                    <h3>Drama Movies</h3><br>
-                    <p>Popular now</p>
+                    <h3 class="genre-title">Drama Movies</h3>
+                    <p class="genre-subcateg">Popular now</p>
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <img class="swiper-slide myBtn" src="images/movie1.png" alt="movie1">
@@ -101,7 +101,7 @@
             </div>
 
             <div>
-                <p>Viewed by friends</p>
+                <p class="genre-subcateg">Viewed by friends</p>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <img class="swiper-slide" src="images/movie9.png" alt="movie1">
@@ -115,12 +115,16 @@
                         <img class="swiper-slide" src="images/movie4.png" alt="movie3">
                     </div>
                     <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
+                   <!-- Add Pagination -->
+                   <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
 
             <div>
-                <p>Recently released</p>
+                <p class="genre-subcateg">Recently released</p>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <img class="swiper-slide" src="images/movie8.png" alt="movie1">
@@ -134,11 +138,13 @@
                         <img class="swiper-slide" src="images/movie7.png" alt="movie3">
                     </div>
                     <!-- Add Pagination -->
+                    <!-- Add Pagination -->
                     <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
-            
-
             <button class="see-more-btn">See more</button>
 
             <div class="random-mobile">
@@ -149,19 +155,12 @@
             <!-- The Modal -->
             <?php // Windows -> require_once(__DIR__.'./modal.html') 
                 require_once('modal.html')
-                ?>
-
+            ?>
         </div>
-
-
         <div id="profile" class="subpage">
             <?php require_once('profile.html') ?>
         </div>
     </main>
-
-
-
-
 </div>
 
-</div>
+
