@@ -93,6 +93,9 @@ header nav {
     grid-column: 3;
     grid-row: 1;
 }
+.arrow-profile:hover{
+    transform: scale(1.3);
+}
 
 .see-more-btn {
     color: white;

@@ -224,6 +224,9 @@ header nav {
     grid-column: 3;
     grid-row: 1;
 }
+.arrow-profile:hover{
+    transform: scale(1.3);
+}
 
 .see-more-btn {
     color: white;
@@ -1442,7 +1445,7 @@ header nav .logo {
 }
 
 .logo-chat .logo {
-    width: 5%;
+    width: 8%;
     float:left;
 }
 
@@ -1485,6 +1488,7 @@ header nav .logo {
     height: 100vh;
     background:var(--main-bg-color);
     width: 18%;
+    z-index: 3;
 }
 
 
@@ -1497,6 +1501,7 @@ header nav .logo {
 .chat-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 1em;
     
 }
 
@@ -1508,7 +1513,9 @@ header nav .logo {
     color: black;
     width: 2em;
     height: 2em;
+    cursor: pointer;
 }
+
 
 .friend1 {
     display: grid;
@@ -1563,12 +1570,16 @@ header nav .logo {
 
 .chat-icon {
     position: absolute;
-    /* z-index: 1; */
-    bottom:5em;
-    right: 0;
+    z-index: 2; 
+    top:1em;
+    right: 1em;
+    cursor: pointer;
     /* display: none; */
 
-    
+}
+
+.chat-icon:hover {
+    transform: scale(1.3);
 
 }/* PROFILE PAGE */
 
@@ -1861,6 +1872,7 @@ input.info {
     border-radius: 22px;
     background: linear-gradient(270deg, #F2A447 0%, #E47650 100%);
     font-size: 1em;
+    text-align: center;
 }
 
 .signup {
@@ -2039,6 +2051,13 @@ input.modal-info {
     background: linear-gradient(90deg, rgba(244, 118, 80, 1) 0%, rgba(242, 164, 71, 1) 100%);
     margin-top: 2em;
     justify-self: center;
+}
+
+.friends-btn:hover {
+    border-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    text-decoration: none;
+    cursor: pointer;
 }.swiper-container {
     margin: 0 auto;
     position: relative;

@@ -492,6 +492,25 @@ spanFriends.onclick = function () {
 }
 
 
+///MODAL Friends right
+var modalFriends = document.getElementById("myModalFriends");
+
+// Get the button that opens the modal
+var btnFriends = document.querySelector(".friendsRight");
+
+// Get the <span> element that closes the modal
+var spanFriends = document.getElementsByClassName("close-friends")[0];
+
+// When the user clicks the button, open the modal 
+btnFriends.onclick = function () {
+  modalFriends.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanFriends.onclick = function () {
+  modalFriends.style.display = "none";
+}
+
 
 
 

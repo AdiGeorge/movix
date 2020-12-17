@@ -71,6 +71,7 @@ input.info {
     border-radius: 22px;
     background: linear-gradient(270deg, #F2A447 0%, #E47650 100%);
     font-size: 1em;
+    text-align: center;
 }
 
 .signup {

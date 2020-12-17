@@ -15,7 +15,7 @@
 }
 
 .logo-chat .logo {
-    width: 5%;
+    width: 8%;
     float:left;
 }
 
@@ -58,6 +58,7 @@
     height: 100vh;
     background:var(--main-bg-color);
     width: 18%;
+    z-index: 3;
 }
 
 
@@ -70,6 +71,7 @@
 .chat-top {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 1em;
     
 }
 
@@ -81,7 +83,9 @@
     color: black;
     width: 2em;
     height: 2em;
+    cursor: pointer;
 }
+
 
 .friend1 {
     display: grid;
@@ -136,13 +140,18 @@
 
 .chat-icon {
     position: absolute;
-    /* z-index: 1; */
-    bottom:5em;
-    right: 0;
+    z-index: 2; 
+    top:1em;
+    right: 1em;
+    cursor: pointer;
     /* display: none; */
 
-    
+}
+
+.chat-icon:hover {
+    transform: scale(1.3);
 
 }
+
 
 

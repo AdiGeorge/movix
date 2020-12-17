@@ -6,7 +6,7 @@
   </nav>
   <div id="film">
     <video autoplay muted controls loop id="film-container">
-      <source src="./images/trailer.mp4" type="video/mp4">
+      <source src="/movix/video/movie5Joker.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
     <img class="chat-icon" onclick="showChat(); return false" src="./images/chat-icon.png" alt="">
@@ -15,7 +15,9 @@
   </div>
 
   <div id="chat">
-    <?php require_once(__DIR__.'./chat.html') ?>
+    <?php //require_once(__DIR__.'./chat.html') 
+     require_once('chat.html')
+    ?>
   </div>
 </div>
 
